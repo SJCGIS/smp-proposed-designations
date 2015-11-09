@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <head>
+        <title>Proposed Shoreline Designations - San Juan County</title>
+        <!-- build:[href]:dev css/app.css -->
+        <link rel="stylesheet" href="css/app.min.css" />
+        <!-- /build -->
+
+
+
+    </head>
+    <body>
+        <div id="sidebar" class="sidebar">
+            <!-- Nav Tabs -->
+            <ul class="sidebar-tabs" role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-list-alt"></i></a></li>
+                <li><a href="#propDesig" role="tab"><i class="fa fa-th-list"></i></a></li>
+                <li><a href="#compPlan" role="tab"><i class="fa fa-th-list"></i></a></li>
+                <li><a href="#criticalAreas" role="tab"><i class="fa fa-th-list"></i></a></li>
+            </ul>
+
+            <!-- Tab Panes -->
+            <div class="sidebar-content active">
+                <div class="sidebar-pane" id="home">
+                    <h1>Proposed Shoreline Designation Changes</h1>
+                    <p class="lorem">This web map shows proposed changes to shoreline designations.</p>
+
+                    <h3>How to Use</h3>
+                    <p class="lorem">Click on the magnifying glass to search for an address or parcel number. Or use zoom in using your mouse wheel or pinch-zoom on mobile devices.</p>
+
+                    <p class="lorem">Markers indicate locations of proposed shoreline designation changes. Usethe layer controller to switch between proposed and existing designations or to swtich between critical areas and inland land use maps</p>
+                    <p class="lorem">
+                        Click or tap on a tab to the left to see legend information for different layers.
+                    </p>
+                </div>
+                <div class="sidebar-pane" id="propDesig">
+                    <h2>Shoreline Designations</h2>
+                    <div id="propDesigLegend"></div>
+                </div>
+                <div class="sidebar-pane" id="compPlan">
+                    <h2>Comprehensive Plan</h2>
+                    <div id="compPlanLegend"></div>
+                </div>
+                <div class="sidebar-pane" id="criticalAreas">
+                    <h2>Critical Areas</h2>
+                    <div id="criticalAreasLegend"></div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <!-- build:[src]:dev js/L.App.js -->
+        <script src="js/L.App.min.js" type="text/javascript"></script>
+        <!-- /build -->
+        <script type="text/javascript">
+         window.onload = function() {
+             L.App.app = new L.App.AppController();
+         };
+        </script>
+        <!-- <script src="//cdn.maptiks.com/maptiks-leaflet.min.js"></script> -->
+        <!-- build:js:prod inline -->
+        <script src="js/ga.js" type="text/javascript"></script>
+        <!-- <script src="js/maptiks.js" type="text/javascript"></script> -->
+        <!-- /build -->
+    </body>
+</html>

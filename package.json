@@ -1,0 +1,63 @@
+{
+  "name": "smp-proposed-designations",
+  "version": "0.1.0",
+  "description": "A web application showing proposed designation changes for the San Juan County WA Shoreline Master Program. A user may choose from three available themes: aerial imagery, upland land use, and critical areas. Markers indicate locations of proposed changes. Mapping errors should be directed to sjcgis@sanjuanco.com.",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjcgis/smp-proposed-designations"
+  },
+  "author": "Nick Peihl",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/sjcgis/smp-proposed-designations/issues"
+  },
+  "homepage": "https://github.com/sjcgis/smp-proposed-designations",
+  "devDependencies": {
+    "browserify": "^10.2.0",
+    "chai": "^2.3.0",
+    "connect-livereload": "^0.5.3",
+    "esri-leaflet": "^1.0.0",
+    "esri-leaflet-clustered-feature-layer": "^1.0.0",
+    "esri-leaflet-geocoder": "^1.0.0",
+    "font-awesome": "^4.3.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-focus": "^0.1.1",
+    "grunt-gh-pages": "^0.10.0",
+    "grunt-karma": "^0.10.1",
+    "grunt-open": "^0.2.3",
+    "grunt-processhtml": "^0.3.7",
+    "grunt-purifycss": "^0.1.0",
+    "grunt-sass": "^1.0.0",
+    "karma": "^0.12.31",
+    "karma-browserify": "^4.1.2",
+    "karma-chai": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "leaflet": "^0.7.5",
+    "leaflet-groupedlayercontrol": "git://github.com/ismyrnow/Leaflet.groupedlayercontrol#v0.3.1",
+    "leaflet.markercluster": "^0.4.0",
+    "mocha": "^2.2.5",
+    "node-sass": "^3.1.1",
+    "sidebar-v2": "git://github.com/Turbo87/sidebar-v2#v0.2.1",
+    "turf-centroid": "^1.1.2",
+    "uglify-js": "^2.4.21"
+  },
+  "dependencies": {
+    "drmonty-leaflet-awesome-markers": "^2.0.2",
+    "humane-js": "^3.2.2"
+  }
+}
